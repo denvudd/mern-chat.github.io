@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# MERN Realtime chat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Real-time full-stack chat built using React, MongoDB, Typescript, Express, Node.js, Tailwind, and Websockets.
 
-Currently, two official plugins are available:
+> [!WARNING]  
+> Unfortunately, Vercel does not support Websockets (relative issue: ), so the live demo is not functional. There are workarounds to make Vercel and Websockets compatible, but the goal of this project was to explore working directly with Websockets using Express, and workaround services have their specific logic for WS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img src="./public/Screenshot 2024-01-18 10.26.44.png" title="hover text">
+</p>
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 📥 Basic user authentication using JWT token
+- 💬 Message exchange, online statuses, and file sharing using Websockets
+- 🎨 Animation for messages and contacts
+- 🔽 File uploads
+- 📁 Message persistence in MongoDB database
+- 🖌 Comfy UI system built with Tailwind CSS
 
-- Configure the top-level `parserOptions` property like this:
+## Fullstack
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- React
+- Typescript
+- Express.js
+- Websokets
+- MongoDB
+- Mongo Atlas
+- Node.js
+- TailwindCSS
+- JWT
