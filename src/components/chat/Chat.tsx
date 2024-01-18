@@ -33,7 +33,7 @@ const Chat: React.FC = () => {
       connection.close();
       setConnection(null);
     } else {
-      const socket = new WebSocket(`ws://${process.env.PUBLIC_BACKEND}`);
+      const socket = new WebSocket(`wss://${process.env.PUBLIC_BACKEND}`);
       setConnection(socket);
       socket.addEventListener("message", handleMessage);
       socket.addEventListener("close", () => {
