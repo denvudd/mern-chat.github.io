@@ -6,7 +6,7 @@ Real-time full-stack chat built using React, MongoDB, Typescript, Express, Node.
 > Unfortunately, Vercel does not support Websockets (relative issue: ), so the live demo is not functional. There are workarounds to make Vercel and Websockets compatible, but the goal of this project was to explore working directly with Websockets using Express, and workaround services have their specific logic for WS.
 
 <p align="center">
-  <img src="./public/Screenshot 2024-01-18 10.26.44.png" title="hover text">
+  <img src="./public/Screenshot 2024-01-18 10.40.52.png" title="hover text">
 </p>
 
 ## Features
