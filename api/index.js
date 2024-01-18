@@ -155,7 +155,7 @@ const server = app.listen(port, () => {
   console.log("Server running on port 4040");
 });
 
-const wss = new WebSocketServer({ server });
+const wss = new WebSocketServer({ server, path: "/wss/api" });
 wss.on("connection", (connection, req) => {
   function notifyOnlinePeople() {
     // notify everyone about online people (when someone connects)
